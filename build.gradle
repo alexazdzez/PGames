@@ -1,0 +1,19 @@
+plugins {
+    id 'java'
+}
+
+group 'fr.na.tcharlex.PGames'
+version '1.0'
+
+repositories {
+    mavenCentral()
+    mavenLocal()
+}
+
+dependencies{
+    compileOnly 'org.spigotmc:spigot:1.19.3-R0.1-SNAPSHOT'
+}
+
+sourceCompatibility = targetCompatibility = '18'
+compileJava.options.encoding = 'UTF-8'
+setLibsDirName('../server/plugins')
